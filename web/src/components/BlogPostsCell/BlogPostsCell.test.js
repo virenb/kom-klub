@@ -1,8 +1,8 @@
 import { render, screen } from '@redwoodjs/testing'
-import { Loading, Empty, Failure, Success } from './PostsCell'
-import { standard } from './PostsCell.mock'
+import { Loading, Empty, Failure, Success } from './BlogPostsCell'
+import { standard } from './BlogPostsCell.mock'
 
-describe('PostsCell', () => {
+describe('BlogPostsCell', () => {
   test('Loading renders successfully', () => {
     render(<Loading />)
     // Use screen.debug() to see output
@@ -20,7 +20,7 @@ describe('PostsCell', () => {
   })
 
   test('Success renders successfully', async () => {
-    render(<Success posts={standard().posts} />)
+    render(<Success blogPosts={standard().blogPosts} />)
     expect(screen.getByText(/42/i)).toBeInTheDocument()
   })
 })
