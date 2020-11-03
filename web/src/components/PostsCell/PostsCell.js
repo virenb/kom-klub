@@ -7,7 +7,9 @@ export const QUERY = gql`
     posts {
       id
       title
+      slug
       body
+      image
       createdAt
     }
   }

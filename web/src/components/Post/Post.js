@@ -70,8 +70,16 @@ const Post = ({ post }) => {
               <td>{post.title}</td>
             </tr>
             <tr>
+              <th>Slug</th>
+              <td>{post.slug}</td>
+            </tr>
+            <tr>
               <th>Body</th>
               <td>{post.body}</td>
+            </tr>
+            <tr>
+              <th>Image</th>
+              <td>{post.image}</td>
             </tr>
             <tr>
               <th>Created at</th>
